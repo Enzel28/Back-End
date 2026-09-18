@@ -5,5 +5,10 @@
 let anoAtual = 2026
 let anoNascimento = 2010
 
-let subtração = anoAtual - anoNascimento;
-console.log(subtração)
+let idade = anoAtual - anoNascimento;
+
+console.log("Sua idade é: " + idade + " anos.")
+
+// console.log(idade)
+//Template String
+console.log(`Sua idade é: ${idade} anos.`)

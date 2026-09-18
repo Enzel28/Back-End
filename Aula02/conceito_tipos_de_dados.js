@@ -32,3 +32,16 @@ console.log(saudacao);//exibe "olá, Jarvis!"
 
 let soma = 10 + 5;
 console.log(soma);
+
+//boleano (verdadeiro ou falso)
+//um boleano pode ter dois valores: true or false
+
+let maiorDeidade = true
+let menorDeidade = false
+
+console.log(maiorDeidade)
+console.log(menorDeidade);
+
+let idade = 16;
+let podeDirigir = idade >= 18;
+console.log(podeDirigir)
