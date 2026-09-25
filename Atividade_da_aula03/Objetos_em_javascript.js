@@ -192,10 +192,15 @@ console.log("10°---------------------------------------------------------------
 //O usuário eduardo, de 18 anos, está matriculado no curso de Desenvolvimento de Sistemas, turma DS 2. Seu nível de acesso é administrador e seu e-mail é eduardo@email.com. A senha cadastrada é 1234.
 
 let conta = {
-    Usuário: "eduardo"
-    cidade: "Fortaleza",
-    turno: "manhã"
+    usuario: "eduardo",
+    senha: "1234",
+    nome: "Eduardo Silva",
+    email: "eduardo@email.com",
+    nivel: "administrador",
+    curso: "Desenvolvimento de Sistemas",
+    turma: "DS 2",
+    idade: "18"
 };
 
-console.log(O usuário eduardo, de 18 anos, está matriculado no curso de Desenvolvimento de Sistemas, turma DS 2. Seu nível de acesso é administrador e seu e-mail é eduardo@email.com. A senha cadastrada é 1234.)
+console.log("O usuário", conta.usuario ," de", conta.idade ,"anos, está matriculado no curso de", conta.curso ,", turma", conta.turma ,"Seu nível de acesso é", conta.nivel ,"e seu e-mail é", conta.email ,"A senha cadastrada é", conta.senha)
 console.log("-----------------------------------------------------------------------------------------------------------------")
