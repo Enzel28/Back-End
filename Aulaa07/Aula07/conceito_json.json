@@ -1,0 +1,14 @@
+{
+    "cachorro":{
+        "nome": "Max",
+        "idade": 3,
+        "raca": "Golden",
+        "vacinado": true,
+        "peso": 25.5,
+        "brinquedos": ["bola", "osso", "frisbee"],
+        "dono": {
+            "nome": "joão",
+            "telefone": "1199999967"
+        }
+    }
+}
