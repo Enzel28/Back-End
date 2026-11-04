@@ -57,7 +57,7 @@ setInterval(() =>{
         tempo ++;
         //limpa a tela para o número "mudar no mesmo lugar"
         console.clear();
-        console.log('⏱️' + formatar (tempo));
+        console.log('⏱️ ' + formatar (tempo));
     }
 }, 1000); 
 
