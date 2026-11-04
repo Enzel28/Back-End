@@ -41,7 +41,7 @@ function formatar(total){
     // String (...) transforma o número em texto
     // padStart (2, 0) = "Se tiver menos de 2 caracteres, complete com 0 na frente"
     // Assim "5" vira "05", depois nós juntamos os pedaços com o ":"
-    return String(main).padStart(2, '0') + ':' + String(seg).padStart(2, '0');
+    return String(min).padStart(2, '0') + ':' + String(seg).padStart(2, '0');
 }
 
 //====================================
@@ -65,7 +65,7 @@ setInterval(() =>{
 // Bloco 05: Ouvindo o teclado 
 //====================================
 
-process.stdin.on('Keypress', (letra, tecla) => {
+process.stdin.on('keypress', (letra, tecla) => {
     // Foi a tecla P? (=== compara se os dois lados são iguais)
     if (tecla.name === 'p') {
         // O ! INVERTE o valor: true vira false, false vira true
@@ -81,5 +81,8 @@ process.stdin.on('Keypress', (letra, tecla) => {
         console.log('⏱️ ' + formatar(tempo))
         console.log('🔄️ Resetado')
 
-    } else if (tecla.ctrl && tecla.name === 'c')
+    } else if (tecla.ctrl && tecla.name === 'c'){
+        console.log('\n 👏🏿👏🏻 Até mais!');
+        process.exit();
+    }
 })
