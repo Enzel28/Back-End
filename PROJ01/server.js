@@ -64,3 +64,22 @@ setInterval(() =>{
 //====================================
 // Bloco 05: Ouvindo o teclado 
 //====================================
+
+process.stdin.on('Keypress', (letra, tecla) => {
+    // Foi a tecla P? (=== compara se os dois lados são iguais)
+    if (tecla.name === 'p') {
+        // O ! INVERTE o valor: true vira false, false vira true
+        rodando = !rodando;
+        // Operador ternário: condição ? valor_se_verdadeiro : valor_se_falso
+        // É um if de uma linha só
+        console.log(rodando ? '▶️ continuando': '⏸️ Pausado');
+
+    // Senão, foi a tecla R?
+    } else if (tecla.name === 'r') {
+        tempo = 0;
+        console.clear();
+        console.log('⏱️ ' + formatar(tempo))
+        console.log('🔄️ Resetado')
+
+    } else if (tecla.ctrl && tecla.name === 'c')
+})
